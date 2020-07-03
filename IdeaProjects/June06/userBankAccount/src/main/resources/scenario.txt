@@ -1,0 +1,31 @@
+1. Identify the scenario
+2. Test Cases
+____________________________
+1. Set up an environment
+2. Execute
+
+
+Junit -- Light Weight | Popular among developer
+
+TestNG -- Lot of functionaliy
+                - Popular in QA Developers
+
+-- Project Requirement
+   Bank
+       1. We will have accounts with Min balance criteria
+       2. Account should have following details
+            -- User [ name, address, id]
+            -- Balance
+            -- minBlance
+            -- Trx [ Type Debit/Credit, DateOfTrax, id, charge]
+            -- Fee
+            -- NoOFtrxAllowed
+       3. User should be able to do transaction
+            - Withdraw , if there balance fall below min
+                apply a monthly fee
+                make sure it applies only once
+       4. If now of trx exceed
+            then every tex should be charged $1
+       5. Print it
+       6. Add
+       7  Delete Account.
