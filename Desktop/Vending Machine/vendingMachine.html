@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chocolate Vending Machine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="background-color: coral;">
+
+    
+    <h1>Chocolate Vending Machine</h1>
+
+    <form style="margin-bottom: 10px;">
+        <span>Loonies</span> <input type="text" name="loonies" id="loonies" placeholder="0" value="0" oninput="tally()"><br>
+        <br><span>Toonies</span> <input type="text" name="toonies" id="toonies" placeholder="0" value="0" oninput="tally()"><br>
+        <br><span>Nickels</span> <input type="text" name="nickels" id="nickels" placeholder="0" value="0" oninput="tally()"><br>
+        <br><span>Dimes</span> <input type="text" name="dimes" id="dimes" placeholder="0" value="0" oninput="tally()"><br>
+        <br><span>Quarters</span> <input type="text" name="quarters" id="quarters" placeholder="0" value="0" oninput="tally()"><br>
+    </form>
+
+    <button style="background-color:chocolate;" value="Twix" id="twix" onclick="dispenseChocolate(0)">Twix</button>
+    <button style="background-color:brown" value="Aero" id="aero" onclick="dispenseChocolate(1)">Aero</button>
+    <button style="background-color: red" value="Kitkat" id="kitkat" onclick="dispenseChocolate(2)">Kitkat</button>
+    <button style="background-color:orangered" value="Mars" id="mars" onclick="dispenseChocolate(3)">Mars</button>
+    <button style="background-color: blue" value="Lindt" id="lindt" onclick="dispenseChocolate(4)" style="margin-bottom: 10px;">Lindt</button>
+    <br>
+    <br><button value="Cancel" id="cancel" onclick="cancel()">Cancel</button>
+
+    <h2>Total Entered: $<span id="paid">0.00</span></h2>
+
+    <h2 id="message">Please insert the coin first. Select an item.</h2>
+
+    <script src="vending.js"></script>
+</body>
+
+</html>
